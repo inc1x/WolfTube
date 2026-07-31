@@ -61,33 +61,6 @@ WolfTube enhances the YouTube experience with powerful downloading tools, advanc
 
 ---
 
-## 🐺 WolfTube Integration
-
-<div align="center">
-
-<table>
-<tr>
-<td><img src="https://github.com/user-attachments/assets/ef7b7f73-e5c1-411d-a739-c1401c53b6ae" width="220" alt="WolfTube Home"></td>
-<td><img src="https://github.com/user-attachments/assets/c42746e3-5d8d-479c-a981-2da1549fa427" width="220" alt="WolfTube Shorts"></td>
-<td><img src="https://github.com/user-attachments/assets/e8afde6e-e5b8-47fb-b70f-a0a1a67d881d" width="220" alt="WolfTube Video"></td>
-</tr>
-
-<tr>
-<td><img src="https://github.com/user-attachments/assets/6e242a40-c895-404a-9836-afe3c8abcf93" width="220" alt="WolfTube Channel"></td>
-<td><img src="https://github.com/user-attachments/assets/ccd64f6d-940f-4892-aed8-4da98f17bbbe" width="220" alt="WolfTube Menu"></td>
-<td><img src="https://github.com/user-attachments/assets/5a87472f-e6f0-44c9-a0ef-57429bb76b69" width="220" alt="WolfTube Settings"></td>
-</tr>
-
-<tr>
-<td><img src="https://github.com/user-attachments/assets/bd16f312-32cf-454c-b1ef-4581328392e9" width="220" alt="WolfTube Options"></td>
-<td><img src="https://github.com/user-attachments/assets/6f9940d9-6df5-4225-95ba-b984d9c3d8f3" width="220" alt="WolfTube Features"></td>
-<td></td>
-</tr>
-
-</table>
-
-</div>
-
 - WolfTube button available on regular YouTube videos.
 - WolfTube button available on Shorts videos.
 - WolfTube button available on channel and profile pages.
@@ -143,12 +116,24 @@ WolfTube enhances the YouTube experience with powerful downloading tools, advanc
 <td><img src="https://github.com/user-attachments/assets/5d48c075-bd16-4f93-ae74-d269c02f1b14" width="280" alt="Screenshot 4"></td>
 <td><img src="https://github.com/user-attachments/assets/c22cfbe5-d35c-4b68-9531-7fa852dbf0c6" width="280" alt="Screenshot 5"></td>
 <td><img src="https://github.com/user-attachments/assets/c54f43f7-9cfd-423b-b61e-a9e3b518eec6" width="280" alt="Screenshot 6"></td>
-</tr>
-
-<tr>
 <td><img src="https://github.com/user-attachments/assets/0439a846-6c92-438c-9323-d428e7ad1eb7" width="280" alt="Screenshot 7"></td>
 <td><img src="https://github.com/user-attachments/assets/900eb4b4-6e07-4d2e-9f47-97aa62cdb0a2" width="280" alt="Screenshot 8"></td>
 <td><img src="https://github.com/user-attachments/assets/7a4b2938-c0e6-446e-886c-d6c7af01813d" width="280" alt="Screenshot 9"></td>
+<td><img src="https://github.com/user-attachments/assets/ef7b7f73-e5c1-411d-a739-c1401c53b6ae" width="220" alt="WolfTube Home"></td>
+<td><img src="https://github.com/user-attachments/assets/c42746e3-5d8d-479c-a981-2da1549fa427" width="220" alt="WolfTube Shorts"></td>
+<td><img src="https://github.com/user-attachments/assets/e8afde6e-e5b8-47fb-b70f-a0a1a67d881d" width="220" alt="WolfTube Video"></td>
+</tr>
+
+<tr>
+<td><img src="https://github.com/user-attachments/assets/6e242a40-c895-404a-9836-afe3c8abcf93" width="220" alt="WolfTube Channel"></td>
+<td><img src="https://github.com/user-attachments/assets/ccd64f6d-940f-4892-aed8-4da98f17bbbe" width="220" alt="WolfTube Menu"></td>
+<td><img src="https://github.com/user-attachments/assets/5a87472f-e6f0-44c9-a0ef-57429bb76b69" width="220" alt="WolfTube Settings"></td>
+</tr>
+
+<tr>
+<td><img src="https://github.com/user-attachments/assets/bd16f312-32cf-454c-b1ef-4581328392e9" width="220" alt="WolfTube Options"></td>
+<td><img src="https://github.com/user-attachments/assets/6f9940d9-6df5-4225-95ba-b984d9c3d8f3" width="220" alt="WolfTube Features"></td>
+<td></td>
 </tr>
 
 </table>
