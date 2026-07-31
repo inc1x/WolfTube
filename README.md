@@ -28,44 +28,85 @@ WolfTube enhances the YouTube experience with powerful downloading tools, advanc
 - Access a complete downloads library directly inside YouTube.
 - Create custom playlists to organize your favorite videos and audio files in one place.
 - Enjoy your own personal media library without relying on separate music streaming apps.
-- Rename any playlist at any time to keep your library organized.
-- Pin your favorite playlists so they always remain at the top for quick access.
-- Share playlists directly with other WolfTube users.
-- Search across your entire library to instantly find videos, audio files, and playlists.
-- View the video title, selected quality, file size, download date, and current download progress.
-- Play downloaded videos and audio directly from the downloads library.
-- Automatically resume downloaded videos and audio from the last playback position.
-- Save playback progress when pausing playback, locking the device, leaving the app, or seeking through the timeline.
-- Restart downloaded media from the beginning only after playback has finished completely.
-- Undo playlist deletion within **10 seconds** to prevent accidental data loss.
-- Share, save, export, or delete downloaded files with ease.
-- Create a complete backup of your WolfTube library, including downloaded videos, audio files, playlists, playback progress, and library metadata.
-- Restore a backup at any time and continue exactly where you left off—even after uninstalling or reinstalling the application.
-- Manage all downloaded content from one organized interface.
-- Full support for **iOS 27.5.2**, delivering improved stability and excellent compatibility.
+- Rename playlists at any time.
+- Pin favorite playlists to the top.
+- Share playlists with other WolfTube users.
+- Search across videos, audio files, and playlists instantly.
+- View the title, quality, size, download date, and progress.
+- Play downloaded media directly from the library.
+- Automatically resume playback from the last position.
+- Save playback progress when pausing, seeking, locking the device, or leaving the app.
+- Restart media from the beginning only after playback finishes completely.
+- Undo playlist deletion within **10 seconds**.
+- Share, export, save, or delete downloaded files.
+- Backup and restore your entire WolfTube library.
+- Manage all downloaded content from one interface.
+- Full support for **iOS 27.5.2**.
 
 ---
 
 ## ▶️ Playback & Viewing
 
-- Picture-in-Picture support for watching videos outside YouTube.
-- Continue playing videos and audio after leaving the app.
-- Background audio playback support.
+- Picture-in-Picture (PiP) support.
+- Background video and audio playback.
 - Adjustable playback speed from **0.5× to 10×**.
-- Stable Playback mode for improved compatibility and smoother playback.
-- Keep videos playing while using other applications.
-- Control downloaded media directly from the Lock Screen.
-- Skip forward or backward by **15 seconds** while playing downloaded media.
-- Display the channel name and video artwork on the Lock Screen while playing downloaded media.
-- Cleaner viewing experience with the option to hide the Shorts interface.
+- Stable Playback mode.
+- Continue playback while using other apps.
+- Lock Screen playback controls.
+- Skip forward/backward **15 seconds**.
+- Display channel information and artwork on the Lock Screen.
+- Hide the Shorts interface for a cleaner experience.
 
 ---
 
 ## 🐺 WolfTube Integration
 
+- WolfTube button on regular YouTube videos.
+- WolfTube button on Shorts.
+- WolfTube button on channel and profile pages.
+- Independent settings for every WolfTube button.
+- Enable or disable individual features.
+
+---
+
+## 👤 Channel & Profile Tools
+
+- Download profile pictures in the highest quality.
+- Copy channel name.
+- Copy channel ID.
+- Copy channel URL.
+- Copy channel description.
+- Access WolfTube tools directly from channel pages.
+
+---
+
+## 📋 Video & Comment Tools
+
+- Copy video titles.
+- Copy complete video descriptions.
+- Copy individual comments.
+- Access useful video information instantly.
+
+---
+
+## 🛡️ Additional Improvements
+
+- Reduce YouTube advertisements.
+- Automatically skip supported skippable ads.
+- Improved compatibility across supported YouTube versions.
+- Refined interface and settings.
+- Multi-language support including Arabic.
+- Built-in project validation system.
+- Advanced diagnostic tools.
+
+---
+
+## 📸 Screenshots
+
 <div align="center">
 
 <table>
+
 <tr>
 <td><img src="https://github.com/user-attachments/assets/ef7b7f73-e5c1-411d-a739-c1401c53b6ae" width="220" alt="WolfTube Home"></td>
 <td><img src="https://github.com/user-attachments/assets/c42746e3-5d8d-479c-a981-2da1549fa427" width="220" alt="WolfTube Shorts"></td>
@@ -88,87 +129,20 @@ WolfTube enhances the YouTube experience with powerful downloading tools, advanc
 
 </div>
 
-- WolfTube button available on regular YouTube videos.
-- WolfTube button available on Shorts videos.
-- WolfTube button available on channel and profile pages.
-- Independent settings for controlling where WolfTube buttons appear.
-- Enable or disable individual WolfTube features from the settings page.
-
----
-
-## 👤 Channel & Profile Tools
-
-- Download profile pictures in the highest available quality.
-- Copy the channel name.
-- Copy the channel ID.
-- Copy the channel URL.
-- Copy the channel description.
-- Access WolfTube tools directly from channel and profile pages.
-
----
-
-## 📋 Video & Comment Tools
-
-- Copy the video title instantly.
-- Copy the complete video description.
-- Copy individual comments.
-- Access useful video information without leaving the player.
-
----
-
-## 🛡️ Additional Improvements
-
-- Reduce advertisements displayed inside YouTube.
-- Automatically skip supported skippable advertisements.
-- Improved stability across supported YouTube versions.
-- Refined settings and interface organization.
-- Added support for multiple languages, including Arabic.
-- Built-in project validation system that detects potential issues before generating release builds.
-- Dedicated diagnostic tools for faster and more reliable troubleshooting.
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-<table>
-<tr>
-<td><img src="https://github.com/user-attachments/assets/cee4b5a4-3be9-4a19-ad36-49d0c64d3985" width="280" alt="Screenshot 1"></td>
-<td><img src="https://github.com/user-attachments/assets/d5b1ccbb-ef85-4f21-92d5-53ba25f202da" width="280" alt="Screenshot 2"></td>
-<td><img src="https://github.com/user-attachments/assets/304cb22f-356d-4e3c-a6df-951f3324732d" width="280" alt="Screenshot 3"></td>
-</tr>
-
-<tr>
-<td><img src="https://github.com/user-attachments/assets/5d48c075-bd16-4f93-ae74-d269c02f1b14" width="280" alt="Screenshot 4"></td>
-<td><img src="https://github.com/user-attachments/assets/c22cfbe5-d35c-4b68-9531-7fa852dbf0c6" width="280" alt="Screenshot 5"></td>
-<td><img src="https://github.com/user-attachments/assets/c54f43f7-9cfd-423b-b61e-a9e3b518eec6" width="280" alt="Screenshot 6"></td>
-</tr>
-
-<tr>
-<td><img src="https://github.com/user-attachments/assets/0439a846-6c92-438c-9323-d428e7ad1eb7" width="280" alt="Screenshot 7"></td>
-<td><img src="https://github.com/user-attachments/assets/900eb4b4-6e07-4d2e-9f47-97aa62cdb0a2" width="280" alt="Screenshot 8"></td>
-<td><img src="https://github.com/user-attachments/assets/7a4b2938-c0e6-446e-886c-d6c7af01813d" width="280" alt="Screenshot 9"></td>
-</tr>
-
-</table>
-
-</div>
-
 ---
 
 ## 📦 Installation
 
-1. Download the latest WolfTube package from the **Assets** section below.
+1. Download the latest WolfTube package from the **Assets** section.
 2. Install or sign the application using your preferred supported method.
 3. Open YouTube.
-4. WolfTube features will appear automatically throughout supported pages.
+4. WolfTube features will appear automatically.
 
 ---
 
-## ⚠️ Important Notes
+## ⚠️ Disclaimer
 
-- WolfTube is independently developed and is not affiliated with, endorsed by, or sponsored by YouTube or Google.
+WolfTube is an independent project and is **not affiliated with, endorsed by, or sponsored by YouTube or Google**.
 
 ---
 
