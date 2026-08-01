@@ -174,6 +174,6 @@ WolfTube enhances the YouTube experience with powerful downloading tools, advanc
 
 <div align="center">
 
-**Made with ❤️ by the WolfTube Team**
+**Made with ❤️ by the inc**
 
 </div>
