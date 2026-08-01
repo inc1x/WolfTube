@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐺 WolfTube v1.20.3
+# 🐺 WolfTube v1.21.6
 
 ### A more powerful YouTube experience for iOS
 
@@ -168,7 +168,7 @@ WolfTube enhances the YouTube experience with powerful downloading tools, advanc
 
 ## ⚠️ Important Notes
 
-- WolfTube is independently developed and is not affiliated with, endorsed by, or sponsored by YouTube or Google.
+- The tool now supports logging in on the cloned version 🫶🏻
 
 ---
 
