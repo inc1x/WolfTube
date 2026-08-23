@@ -6,7 +6,7 @@ width="155"
 alt="WolfTube Logo"
 />
 
-# 🐺 WolfTube
+#  WolfTube
 
 ### The Ultimate YouTube Experience for iOS
 
