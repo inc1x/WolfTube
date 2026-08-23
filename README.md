@@ -6,103 +6,64 @@ width="155"
 alt="WolfTube Logo"
 />
 
-#  WolfTube
+# WolfTube
 
-### The Ultimate YouTube Experience for iOS
+### A Powerful YouTube Experience for iOS
 
-**WolfTube v1.21.6**
-
-<br>
-
-![iOS](https://img.shields.io/badge/iOS-Supported-black?style=for-the-badge\&logo=apple)
-![YouTube](https://img.shields.io/badge/YouTube-Enhanced-FF0000?style=for-the-badge\&logo=youtube\&logoColor=white)
-![WolfTube](https://img.shields.io/badge/WolfTube-v1.21.6-8A2BE2?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+**Downloads · Playlists · Background Playback · PiP · SponsorBlock · Shorts · Channel Tools**
 
 <br>
 
-### Downloads · Playlists · Background Playback · PiP · SponsorBlock · Shorts · Channel Tools
-
-<br>
-
-> **📦 Download the latest WolfTube release from the Assets section below.**
+> 📦 Download the latest WolfTube package from the **Assets** section.
 
 </div>
 
 ---
 
-# ✨ WolfTube v1.21.6
+# ✨ About WolfTube
 
-WolfTube brings a complete set of advanced media, playback, downloading, playlist, and customization features directly into the YouTube application on iOS.
+WolfTube is an advanced enhancement for YouTube on iOS that adds powerful media, playback, library, customization, and productivity features directly inside the YouTube application.
 
-Download your favorite content, build your own offline media library, continue playback in the background, manage playlists, control media from the Lock Screen, use powerful channel tools, and customize the YouTube experience—all without leaving the app.
+It is designed to feel integrated with YouTube rather than operating as a separate application.
 
----
-
-## 🚀 Main Features
-
-| Feature                 | Description                                       |
-| ----------------------- | ------------------------------------------------- |
-| 📥 Video Downloads      | Download videos in multiple available qualities   |
-| 🎵 Audio Downloads      | Save audio-only versions for offline listening    |
-| 🖼️ Thumbnail Downloads | Download high-quality video thumbnails            |
-| 📚 Media Library        | Complete built-in WolfTube downloads library      |
-| 🎶 Playlists            | Create and manage personal offline playlists      |
-| 🔎 Library Search       | Search videos, audio, and playlists instantly     |
-| ✅ Multi-Select          | Select multiple media files at the same time      |
-| 📤 Batch Sharing        | Share several downloaded files in one action      |
-| 🗑️ Batch Delete        | Delete multiple selected items simultaneously     |
-| ▶️ Resume Playback      | Continue downloaded media from the last position  |
-| 🔒 Lock Screen          | Control downloaded media from the iOS Lock Screen |
-| 🎨 Artwork              | Display media artwork and channel information     |
-| 📺 PiP                  | Continue watching videos outside YouTube          |
-| 🔊 Background Playback  | Keep video and audio playing outside the app      |
-| ⚡ Playback Speed        | Adjustable speed from **0.5× to 10×**             |
-| 🛡️ SponsorBlock        | Skip supported sponsored segments                 |
-| 🚫 Ad Reduction         | Reduce supported advertisements                   |
-| 📱 Shorts Tools         | Extra controls for YouTube Shorts                 |
-| 👤 Channel Tools        | Download and copy channel/profile information     |
-| 💬 Comment Tools        | Copy comments directly                            |
-| 💾 Backup & Restore     | Back up and restore the complete WolfTube library |
-| 🌍 Languages            | Multi-language interface including Arabic         |
+WolfTube allows users to download media, build a personal offline library, create playlists, continue playback in the background, control downloaded media from the Lock Screen, manage multiple files at once, access additional tools for videos and channels, and customize which features appear throughout YouTube.
 
 ---
 
-# 📥 Downloads
+# 📥 Video & Audio Downloads
 
-WolfTube provides a powerful download system directly inside YouTube.
+WolfTube adds a complete media downloading system directly into YouTube.
 
 ### Video Downloads
 
-* Download YouTube videos directly from the application.
-* Choose between multiple available quality options.
-* Support for high-resolution downloads, including **2K when available from the source**.
-* Display available qualities before downloading.
-* View download progress in real time.
-* Keep downloads organized inside the WolfTube library.
+* Download videos directly from YouTube.
+* Choose between multiple available video qualities.
+* Support for high-resolution downloads when available.
+* View download progress directly inside WolfTube.
+* Keep downloaded content organized inside the built-in library.
 
 ### Audio Downloads
 
 * Download audio-only versions of supported videos.
+* Listen to downloaded audio offline.
 * Play downloaded audio directly inside WolfTube.
-* Continue audio playback while YouTube is in the background.
-* Use downloaded audio inside WolfTube playlists.
+* Add downloaded audio to custom playlists.
 
 ### Thumbnail Downloads
 
 * Download video thumbnails.
-* Retrieve the highest supported thumbnail quality.
+* Retrieve high-quality thumbnail images.
 * Save or share thumbnails using the native iOS share interface.
 
 ---
 
-# 📚 WolfTube Media Library
+# 📚 Built-In Media Library
 
-WolfTube includes a complete offline media library directly inside YouTube.
+WolfTube includes a complete media library directly inside YouTube.
 
-Each downloaded item can display:
+Downloaded content can display useful information such as:
 
-> • Video title
+> • Media title
 > • Download quality
 > • File size
 > • Download date
@@ -110,56 +71,46 @@ Each downloaded item can display:
 > • Download progress
 > • Playback progress
 
-You can:
+From the library, users can:
 
 * Play downloaded videos.
 * Play downloaded audio.
 * Share downloaded files.
-* Save media to supported locations.
-* Rename supported library items.
-* Delete individual media files.
-* Select multiple files.
-* Share multiple files simultaneously.
-* Delete multiple files simultaneously.
-* Search your entire WolfTube library.
+* Save supported media.
+* Delete downloaded media.
+* Search the library.
+* Organize content using playlists.
+* Resume media from the previous playback position.
 
 ---
 
-# ✅ Multi-Select Mode
+# ✅ Multi-Select
 
-WolfTube includes an improved selection system for managing large libraries.
+WolfTube includes a dedicated selection mode for managing multiple downloaded files at the same time.
 
-Activate **Select Mode** to select multiple:
+Users can select multiple videos or audio files and clearly see which items are currently selected.
 
-* Videos
-* Audio files
-* Downloaded media
+Supported batch actions include:
 
-Selected items are clearly marked so you always know exactly which files are currently selected.
+> • Share multiple files at once
+> • Delete multiple files at once
+> • Manage several library items together
 
-After selecting media, you can perform actions on all selected files at once.
-
-### Available Batch Actions
-
-> • Share selected media
-> • Delete selected media
-> • Manage multiple library items simultaneously
-
-This makes managing large WolfTube libraries significantly faster.
+This makes managing large offline libraries much faster.
 
 ---
 
-# 🎶 WolfTube Playlists
+# 🎶 Playlists
 
-Turn your WolfTube downloads into your own personal offline media collection.
+WolfTube allows users to create their own offline media collections directly inside YouTube.
 
-### Playlist Features
+Playlist features include:
 
-* Create unlimited custom playlists.
+* Create custom playlists.
 * Add downloaded videos.
 * Add downloaded audio.
 * Mix video and audio inside the same playlist.
-* Rename playlists at any time.
+* Rename playlists.
 * Pin favorite playlists.
 * Keep pinned playlists at the top.
 * Search playlists.
@@ -167,341 +118,222 @@ Turn your WolfTube downloads into your own personal offline media collection.
 * Delete playlists.
 * Undo accidental playlist deletion.
 
-### ⏪ 10-Second Undo
+### ⏪ Undo Playlist Deletion
 
-After deleting a playlist, WolfTube provides a **10-second Undo window**.
-
-This protects your library against accidental playlist deletion.
+After deleting a playlist, WolfTube temporarily allows the action to be undone to help prevent accidental data loss.
 
 ---
 
-# ▶️ Smart Playback Resume
+# 🔎 Library Search
 
-WolfTube automatically remembers where you stopped watching or listening.
+WolfTube includes a fast search system for locating downloaded content.
 
-Playback progress can be saved when:
+Users can search through:
+
+* Videos.
+* Audio files.
+* Playlists.
+* Media titles.
+
+Results appear directly inside the WolfTube library.
+
+---
+
+# ▶️ Playback Resume
+
+WolfTube remembers playback progress for downloaded media.
+
+Playback position can be saved when:
 
 * Pausing media.
 * Closing the player.
 * Leaving YouTube.
+* Switching applications.
 * Locking the device.
-* Moving through the playback timeline.
-* Switching to another application.
+* Seeking through the timeline.
 
-When you return, playback continues from the saved position.
+When the media is opened again, WolfTube can continue from the previously saved position.
 
-Once the media reaches the end completely, the next playback begins from the start.
+After playback finishes completely, the media can start again from the beginning the next time it is played.
 
 ---
 
-# 🔒 Advanced Lock Screen Playback
+# 🔒 Lock Screen Controls
 
-Downloaded WolfTube media integrates with the iOS Lock Screen and Control Center.
+Downloaded media integrates with the iOS Lock Screen and Control Center.
 
-The Lock Screen can display:
+WolfTube can display:
 
-* Video artwork.
+* Media artwork.
 * Video title.
 * Channel name.
 * Playback progress.
 * Media duration.
 
-### Smart Controls
-
-For standalone downloaded media:
+For individual media playback, controls can include:
 
 > • Play / Pause
-> • Skip Backward 15 Seconds
-> • Skip Forward 15 Seconds
+> • Skip Backward
+> • Skip Forward
 > • Timeline Seeking
 
-When playing media from a WolfTube playlist, controls automatically adapt for playlist navigation:
+When playing media from a playlist, controls can automatically adapt to playlist navigation:
 
 > • Previous Track
 > • Play / Pause
 > • Next Track
 
-This provides a more natural music-player experience.
-
 ---
 
-# 🎨 Native Playback Feedback
+# 🔊 Background Playback
 
-WolfTube uses cleaner native-style feedback throughout the interface.
+WolfTube allows supported videos and audio to continue playing after leaving YouTube.
 
-Playback and media actions use visual feedback designed to remain consistent with the YouTube interface instead of relying on intrusive temporary white messages.
+Background playback can continue while:
+
+* Using another application.
+* Returning to the Home Screen.
+* Locking the device.
+* Playing downloaded videos.
+* Playing downloaded audio.
+* Listening to WolfTube playlists.
 
 ---
 
 # 📺 Picture-in-Picture
 
-Continue watching videos after leaving YouTube.
+Picture-in-Picture allows supported videos to continue playing outside YouTube.
 
-WolfTube provides Picture-in-Picture support for compatible playback scenarios.
+Users can:
 
-You can:
-
-* Continue watching while browsing other applications.
-* Resize the PiP window.
-* Move the player around the screen.
+* Watch videos while using other applications.
+* Resize the floating player.
+* Move the PiP window around the screen.
 * Return directly to YouTube.
 
 ---
 
-# 🔊 Background Playback
+# ⚡ Playback Speed
 
-Continue listening even when YouTube is no longer visible.
+WolfTube expands playback speed controls and provides a wider range of playback speeds.
 
-Supported scenarios include:
+This can be useful for:
 
-* Switching applications.
-* Returning to the Home Screen.
-* Locking the device.
-* Playing downloaded audio.
-* Playing downloaded videos.
-* Playing WolfTube playlists.
-
----
-
-# ⚡ Advanced Playback Speed
-
-WolfTube expands playback-speed controls.
-
-Choose speeds between:
-
-**0.5× → 10×**
-
-Useful for:
-
-* Podcasts
-* Tutorials
-* Lectures
-* Long videos
-* Music
-* Slow-motion inspection
+* Tutorials.
+* Podcasts.
+* Lectures.
+* Long videos.
+* Music.
+* Quickly reviewing content.
 
 ---
 
 # 🛠️ Stable Playback
 
-WolfTube includes **Stable Playback** mode.
+WolfTube includes an optional Stable Playback mode designed to improve playback compatibility and provide a smoother experience in supported environments.
 
-Stable Playback is designed to improve playback compatibility in supported YouTube environments and provide smoother video playback when enabled.
-
-It can be enabled or disabled independently from WolfTube settings.
+Stable Playback can be enabled or disabled independently.
 
 ---
 
 # 🛡️ SponsorBlock
 
-WolfTube integrates support for skipping supported sponsored segments.
+WolfTube supports SponsorBlock integration for supported videos.
 
-When enabled, SponsorBlock can automatically skip supported segments such as sponsored portions of videos where available.
+When enabled, WolfTube can automatically skip supported sponsored segments when segment information is available.
 
-SponsorBlock can be controlled independently from WolfTube settings.
-
-> Sponsor information availability depends on supported SponsorBlock data for each video.
+SponsorBlock can be independently enabled or disabled from WolfTube settings.
 
 ---
 
-# 🚫 Cleaner YouTube Experience
+# 🚫 Advertisement Reduction
 
-WolfTube includes optional tools designed to provide a cleaner viewing experience.
+WolfTube includes optional tools for reducing supported advertisements inside YouTube.
 
-### Ad Reduction
+Features can include:
 
-* Reduce supported advertisements displayed inside YouTube.
-* Automatically skip supported skippable advertisements.
-* Reduce interruptions during playback.
-
-### Shorts Interface
-
-WolfTube can hide supported Shorts interface elements for users who prefer a cleaner viewing experience.
+* Reducing supported advertisements.
+* Automatically skipping supported skippable advertisements.
+* Providing a cleaner viewing experience.
 
 ---
 
-# 📱 YouTube Shorts Tools
+# 📱 Shorts Tools
 
 WolfTube integrates directly with YouTube Shorts.
 
 Available tools can include:
 
 * WolfTube action button.
-* Download supported Shorts.
-* Download audio.
-* Access media tools.
-* Copy supported information.
-* Cleaner Shorts interface controls.
+* Video downloading.
+* Audio downloading.
+* Quick media actions.
+* Copy utilities.
+* Shorts interface customization.
 
----
-
-# 🐺 Deep YouTube Integration
-
-<div align="center">
-
-<table>
-
-<tr>
-
-<td align="center">
-<img src="https://github.com/user-attachments/assets/ef7b7f73-e5c1-411d-a739-c1401c53b6ae" width="215" alt="WolfTube Home">
-<br>
-<b>Home</b>
-</td>
-
-<td align="center">
-<img src="https://github.com/user-attachments/assets/c42746e3-5d8d-479c-a981-2da1549fa427" width="215" alt="WolfTube Shorts">
-<br>
-<b>Shorts</b>
-</td>
-
-<td align="center">
-<img src="https://github.com/user-attachments/assets/e8afde6e-e5b8-47fb-b70f-a0a1a67d881d" width="215" alt="WolfTube Video">
-<br>
-<b>Video Player</b>
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-<img src="https://github.com/user-attachments/assets/6e242a40-c895-404a-9836-afe3c8abcf93" width="215" alt="WolfTube Channel">
-<br>
-<b>Channel</b>
-</td>
-
-<td align="center">
-<img src="https://github.com/user-attachments/assets/ccd64f6d-940f-4892-aed8-4da98f17bbbe" width="215" alt="WolfTube Menu">
-<br>
-<b>WolfTube Menu</b>
-</td>
-
-<td align="center">
-<img src="https://github.com/user-attachments/assets/5a87472f-e6f0-44c9-a0ef-57429bb76b69" width="215" alt="WolfTube Settings">
-<br>
-<b>Settings</b>
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-<img src="https://github.com/user-attachments/assets/bd16f312-32cf-454c-b1ef-4581328392e9" width="215" alt="WolfTube Options">
-<br>
-<b>Media Options</b>
-</td>
-
-<td align="center">
-<img src="https://github.com/user-attachments/assets/6f9940d9-6df5-4225-95ba-b984d9c3d8f3" width="215" alt="WolfTube Features">
-<br>
-<b>Features</b>
-</td>
-
-<td align="center">
-🐺
-<br>
-<b>WolfTube</b>
-</td>
-
-</tr>
-
-</table>
-
-</div>
-
-WolfTube can integrate its tools into several areas of YouTube.
-
-### Available Locations
-
-> • Regular videos
-> • Shorts
-> • Channel pages
-> • Profile pages
-> • WolfTube media library
-
-Each WolfTube button location can be controlled independently from Settings.
+Users can also choose whether WolfTube controls should appear inside Shorts.
 
 ---
 
 # 👤 Channel & Profile Tools
 
-WolfTube adds additional utilities to supported channel and profile pages.
+WolfTube adds additional utilities directly to supported YouTube channel and profile pages.
 
-### Profile Picture
+### Profile Pictures
 
 * Download channel profile pictures.
-* Retrieve the highest available profile-picture quality.
+* Retrieve the highest available image quality.
 * Save or share the image.
 
 ### Channel Information
 
-Instantly copy:
+Users can quickly copy:
 
 > • Channel Name
 > • Channel ID
 > • Channel URL
 > • Channel Description
 
-No need to manually open multiple YouTube pages.
+WolfTube tools can be accessed directly without leaving the channel page.
 
 ---
 
 # 📋 Video Tools
 
-WolfTube provides quick access to useful video information.
+WolfTube adds useful actions directly to regular YouTube videos.
 
-You can instantly:
+Available tools include:
 
-* Copy the video title.
-* Copy the complete video description.
-* Open WolfTube download options.
-* Access supported media information.
-* Download video thumbnails.
 * Download video.
 * Download audio.
+* Download thumbnail.
+* Copy video title.
+* Copy complete video description.
+* Access additional WolfTube media options.
 
 ---
 
 # 💬 Comment Tools
 
-WolfTube adds useful utilities directly to the YouTube comments interface.
+WolfTube makes working with YouTube comments easier.
 
-### Copy Comments
+Users can copy individual comments directly without manually selecting the text.
 
-Copy individual YouTube comments directly without manually selecting the text.
+This can be useful for:
 
-This is especially useful for:
-
-* Links
-* Commands
-* Tutorials
-* Long comments
-* Important information
-
----
-
-# 🔎 Universal Library Search
-
-Search through your entire WolfTube library from one place.
-
-Search supports:
-
-* Downloaded videos.
-* Downloaded audio.
-* Playlists.
-* Media titles.
-
-Results appear instantly as you type.
+* Links.
+* Commands.
+* Tutorials.
+* Long comments.
+* Important information.
 
 ---
 
 # 📌 Pinned Playlists
 
-Important playlists can be pinned to the top of your library.
+Favorite playlists can be pinned so they always remain easily accessible at the top of the WolfTube library.
 
-Pinned playlists remain easily accessible even when your library contains many playlists.
+This is especially useful for users with large media collections.
 
 ---
 
@@ -509,13 +341,13 @@ Pinned playlists remain easily accessible even when your library contains many p
 
 WolfTube playlists can be shared with other WolfTube users.
 
-This provides an easy way to move or share organized collections without manually recreating each playlist.
+This provides an easier way to move or share organized media collections without manually recreating playlist structures.
 
 ---
 
-# 💾 Complete Backup & Restore
+# 💾 Backup & Restore
 
-WolfTube can create a complete backup of your media library.
+WolfTube includes tools for backing up the local media library.
 
 A backup can include:
 
@@ -526,52 +358,40 @@ A backup can include:
 > • Playback positions
 > • Library metadata
 
-Restore the backup later and continue using your library from where you left off.
-
-This is especially useful after:
-
-* Reinstalling the application.
-* Moving to another installation.
-* Updating WolfTube.
-* Rebuilding your local library.
+Backups can later be restored so users can continue using their WolfTube library after reinstalling or moving their setup.
 
 ---
 
-# 🎨 Redesigned WolfTube Interface
+# 🎨 Native YouTube-Inspired Interface
 
-WolfTube v1.21.6 includes interface improvements designed to better match modern YouTube.
+WolfTube is designed to visually integrate with YouTube.
 
-### Dark Mode
+The interface follows the application's appearance and supports both light and dark environments.
 
-WolfTube's dark interface follows YouTube's dark appearance more closely instead of using an unnecessarily deep black background.
-
-### Settings
-
-WolfTube Settings have been reorganized to provide a cleaner and easier-to-understand interface.
-
-Settings are grouped by purpose instead of displaying unrelated controls together.
-
-### Playlist Interface
-
-Playlist pages use a cleaner design inspired by YouTube's own interface.
-
-### Selection Interface
-
-Selected media now has a clearly visible selection state, making it easy to identify exactly what has been selected.
+WolfTube avoids unnecessarily separate interface styles and instead aims to make tools feel like part of YouTube itself.
 
 ---
 
-# ⚙️ WolfTube Settings
+# 🌙 Dark Mode
 
-WolfTube features can be controlled individually.
+WolfTube supports dark mode and uses colors designed to better match YouTube's own dark appearance.
 
-Examples include:
+Interface elements automatically adapt to the current appearance where supported.
+
+---
+
+# ⚙️ Organized Settings
+
+WolfTube provides a dedicated settings interface for controlling individual features.
+
+Settings are organized into logical categories such as:
 
 ### Downloads
 
-> • Download features
-> • Media library
-> • Playlist tools
+> • Video Downloads
+> • Audio Downloads
+> • Media Library
+> • Playlist Features
 
 ### Playback
 
@@ -580,11 +400,11 @@ Examples include:
 > • Stable Playback
 > • Playback Speed
 
-### YouTube
+### YouTube Experience
 
 > • Advertisement Reduction
 > • SponsorBlock
-> • Shorts Interface Controls
+> • Shorts Controls
 
 ### WolfTube Buttons
 
@@ -599,35 +419,60 @@ Examples include:
 > • Appearance
 > • WolfTube interface options
 
-This allows users to keep only the WolfTube features they actually want.
+Users can enable only the WolfTube features they want.
+
+---
+
+# 🐺 YouTube Integration
+
+WolfTube integrates its controls throughout supported areas of YouTube.
+
+WolfTube tools can appear on:
+
+> • Regular videos
+> • Shorts
+> • Channel pages
+> • Profile pages
+> • Downloaded media
+> • WolfTube playlists
+
+Button visibility can be controlled independently from WolfTube settings.
 
 ---
 
 # 🌍 Multi-Language Support
 
-WolfTube supports multiple languages, including:
+WolfTube supports multiple interface languages, including Arabic and English.
 
-* 🇸🇦 Arabic
-* 🇺🇸 English
-* Additional supported interface languages
+The interface is designed to correctly handle:
 
-Interface spacing and icon alignment are designed to work correctly across supported languages.
+* Left-to-right layouts.
+* Right-to-left layouts.
+* Icon alignment.
+* Text spacing.
+* Different interface lengths across languages.
+
+---
+
+# 💬 Native-Style Notifications
+
+WolfTube uses cleaner application-style notifications and feedback for supported actions.
+
+This provides a more consistent visual experience instead of relying on unrelated system-style messages.
 
 ---
 
 # 🧰 Reliability & Diagnostics
 
-WolfTube includes internal tools designed to improve release reliability.
+WolfTube includes internal tools designed to make development and troubleshooting more reliable.
 
-### Project Validation
+These include:
 
-Before preparing release builds, project validation can identify potential configuration or integration problems.
-
-### Diagnostic Tools
-
-Dedicated diagnostic components simplify troubleshooting when YouTube changes internal behavior between versions.
-
-These systems help make WolfTube updates faster and more reliable.
+* Project validation.
+* Compatibility checks.
+* Diagnostic tools.
+* Improved issue detection.
+* Faster troubleshooting when YouTube changes internal behavior.
 
 ---
 
@@ -635,158 +480,35 @@ These systems help make WolfTube updates faster and more reliable.
 
 WolfTube is designed for YouTube on iOS.
 
-Compatibility may depend on:
+Feature availability can vary depending on:
 
 * iOS version.
-* YouTube version.
+* Installed YouTube version.
 * Installation environment.
 * Availability of individual YouTube features.
-* Availability of specific media qualities.
+* Available media formats for each video.
 
-WolfTube v1.21.6 includes compatibility improvements for modern iOS releases, including **iOS 27.5.2**.
-
----
-
-# 📸 Screenshots
-
-<div align="center">
-
-<table>
-
-<tr>
-
-<td>
-<img src="https://github.com/user-attachments/assets/cee4b5a4-3be9-4a19-ad36-49d0c64d3985" width="280" alt="WolfTube Screenshot 1">
-</td>
-
-<td>
-<img src="https://github.com/user-attachments/assets/d5b1ccbb-ef85-4f21-92d5-53ba25f202da" width="280" alt="WolfTube Screenshot 2">
-</td>
-
-<td>
-<img src="https://github.com/user-attachments/assets/304cb22f-356d-4e3c-a6df-951f3324732d" width="280" alt="WolfTube Screenshot 3">
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-<img src="https://github.com/user-attachments/assets/5d48c075-bd16-4f93-ae74-d269c02f1b14" width="280" alt="WolfTube Screenshot 4">
-</td>
-
-<td>
-<img src="https://github.com/user-attachments/assets/c22cfbe5-d35c-4b68-9531-7fa852dbf0c6" width="280" alt="WolfTube Screenshot 5">
-</td>
-
-<td>
-<img src="https://github.com/user-attachments/assets/c54f43f7-9cfd-423b-b61e-a9e3b518eec6" width="280" alt="WolfTube Screenshot 6">
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-<img src="https://github.com/user-attachments/assets/0439a846-6c92-438c-9323-d428e7ad1eb7" width="280" alt="WolfTube Screenshot 7">
-</td>
-
-<td>
-<img src="https://github.com/user-attachments/assets/900eb4b4-6e07-4d2e-9f47-97aa62cdb0a2" width="280" alt="WolfTube Screenshot 8">
-</td>
-
-<td>
-<img src="https://github.com/user-attachments/assets/7a4b2938-c0e6-446e-886c-d6c7af01813d" width="280" alt="WolfTube Screenshot 9">
-</td>
-
-</tr>
-
-</table>
-
-</div>
+WolfTube is continuously adapted as YouTube and iOS evolve.
 
 ---
 
 # 📦 Installation
 
-### 1. Download
-
-Open the latest WolfTube release and download the package from the **Assets** section.
-
-### 2. Install
-
-Install or sign the application using your preferred supported installation method.
-
-### 3. Launch YouTube
-
-Open the YouTube application normally.
-
-### 4. Enjoy WolfTube
-
-WolfTube features will automatically appear on supported pages.
-
----
-
-# 🆕 What's New in v1.21.6
-
-### 📚 Library
-
-> • Improved WolfTube media library
-> • Multi-select support
-> • Batch sharing
-> • Batch deletion
-> • Better selection indicators
-> • Library-wide search
-
-### 🎶 Playlists
-
-> • Improved playlist interface
-> • Playlist creation
-> • Playlist renaming
-> • Playlist pinning
-> • Playlist sharing
-> • 10-second Undo after deletion
-
-### ▶️ Playback
-
-> • Improved playback-position saving
-> • Automatic resume
-> • Improved Lock Screen integration
-> • Playlist-aware Previous / Next controls
-> • Background playback improvements
-> • PiP improvements
-
-### 🛡️ YouTube Experience
-
-> • SponsorBlock support
-> • Advertisement reduction improvements
-> • Cleaner Shorts controls
-
-### 🎨 Interface
-
-> • WolfTube Dark Mode now better matches YouTube
-> • Improved settings organization
-> • Improved playlist design
-> • Improved action feedback
-> • Better spacing between text and icons
-> • Better multi-language interface alignment
-
-### ⚙️ Reliability
-
-> • Improved project validation
-> • Improved diagnostic system
-> • Compatibility improvements
-> • Stability improvements
+1. Open the latest WolfTube release.
+2. Download the WolfTube package from the **Assets** section.
+3. Install or sign the application using a supported installation method.
+4. Open YouTube.
+5. WolfTube features will automatically appear throughout supported parts of the application.
 
 ---
 
 # ⚠️ Important Notes
 
-> WolfTube v1.21.6 includes login compatibility improvements for supported cloned application environments. 🫶🏻
+> WolfTube includes compatibility improvements for supported cloned application environments.
 
-Some features depend on the installed YouTube version and may require WolfTube updates when YouTube changes its internal interface.
+Some WolfTube features depend on YouTube's internal implementation and may require updates when YouTube changes its interface or playback systems.
 
-Available download quality depends on the media formats provided for each individual video.
+Available download qualities depend on the formats provided by the selected video.
 
 SponsorBlock functionality depends on supported segment data being available for the selected video.
 
@@ -797,9 +519,9 @@ SponsorBlock functionality depends on supported segment data being available for
 If you enjoy WolfTube:
 
 ⭐ Star the repository
-📢 Share WolfTube with other users
+📢 Share WolfTube
 🐛 Report reproducible issues
-💡 Suggest useful new features
+💡 Suggest useful features
 
 ---
 
@@ -820,9 +542,5 @@ Users are responsible for complying with applicable platform terms, copyright ru
 ### Your YouTube. Your Media. Your Way.
 
 **Made with ❤️ by the inc**
-
-<br>
-
-**WolfTube v1.21.6**
 
 </div>
