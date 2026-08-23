@@ -541,6 +541,6 @@ Users are responsible for complying with applicable platform terms, copyright ru
 
 ### Your YouTube. Your Media. Your Way.
 
-**Made with ❤️ by the inc**
+**Made with ❤️ by the @inc_inc**
 
 </div>
