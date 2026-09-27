@@ -26,7 +26,7 @@ WolfTube is an advanced enhancement for YouTube on iOS that adds powerful media,
 
 It is designed to feel integrated with YouTube rather than operating as a separate application.
 
-WolfTube allows users to download media, build a personal offline library, create playlists, continue playback in the background, control downloaded media from the Lock Screen, manage multiple files at once, access additional tools for videos and channels, and customize which features appear throughout YouTube.
+WolfTube allows users to download media, build a personal offline library, create playlists, customize playlist artwork, control playlist playback modes, continue playback in the background, control downloaded media from the Lock Screen, manage multiple files at once, access additional tools for videos and channels, and customize which features appear throughout YouTube.
 
 ---
 
@@ -39,12 +39,14 @@ WolfTube adds a complete media downloading system directly into YouTube.
 * Download videos directly from YouTube.
 * Choose between multiple available video qualities.
 * Support for high-resolution downloads when available.
+* Use supported direct media links for downloads.
 * View download progress directly inside WolfTube.
 * Keep downloaded content organized inside the built-in library.
 
 ### Audio Downloads
 
 * Download audio-only versions of supported videos.
+* Use supported direct media links when available.
 * Listen to downloaded audio offline.
 * Play downloaded audio directly inside WolfTube.
 * Add downloaded audio to custom playlists.
@@ -54,6 +56,12 @@ WolfTube adds a complete media downloading system directly into YouTube.
 * Download video thumbnails.
 * Retrieve high-quality thumbnail images.
 * Save or share thumbnails using the native iOS share interface.
+
+### Direct Link Downloading
+
+WolfTube uses direct media links for supported downloads and keeps download-related logic separated from normal YouTube playback as much as possible.
+
+This improves compatibility and reduces unnecessary dependency on internal SABR download paths.
 
 ---
 
@@ -117,6 +125,43 @@ Playlist features include:
 * Share playlists with other WolfTube users.
 * Delete playlists.
 * Undo accidental playlist deletion.
+* Set a custom playlist image from the iOS Photo Library.
+* Change playlist artwork at any time.
+* Remove custom playlist artwork and restore the default WolfTube icon.
+* Choose between Sequential, Repeat Current Track, and Shuffle playback modes.
+
+### 🖼️ Custom Playlist Artwork
+
+WolfTube allows users to replace the default playlist icon with a custom image selected directly from the iOS Photo Library.
+
+Custom artwork is displayed in the playlist library and inside the playlist screen.
+
+Users can:
+
+> • Select an image from Photos
+> • Replace the current playlist artwork
+> • Remove custom artwork
+> • Restore the default playlist icon
+
+Custom playlist artwork is stored locally and can also be preserved through WolfTube Backup & Restore.
+
+### 🔁 Playlist Playback Modes
+
+WolfTube includes multiple playlist playback modes:
+
+> • Sequential
+> • Repeat Current Track
+> • Shuffle
+
+**Sequential** plays playlist items in their normal order.
+
+**Repeat Current Track** automatically restarts the currently playing item when it finishes.
+
+**Shuffle** plays playlist items in a randomized order.
+
+Playback mode changes are applied directly to the active playlist session.
+
+Playback controls also preserve their intended behavior in right-to-left languages such as Arabic.
 
 ### ⏪ Undo Playlist Deletion
 
@@ -233,6 +278,15 @@ This can be useful for:
 WolfTube includes an optional Stable Playback mode designed to improve playback compatibility and provide a smoother experience in supported environments.
 
 Stable Playback can be enabled or disabled independently.
+
+WolfTube also includes additional playback isolation designed to reduce interference between download-related components and YouTube's native player.
+
+Recent playback compatibility improvements include:
+
+* Better isolation from internal YouTube playback requests.
+* Reduced dependency on SABR and Onesie playback components.
+* Improved compatibility with regular long-form YouTube videos.
+* Diagnostic playback hooks isolated from normal release builds.
 
 ---
 
@@ -354,6 +408,7 @@ A backup can include:
 > • Downloaded videos
 > • Downloaded audio
 > • Playlists
+> • Custom playlist artwork
 > • Playlist organization
 > • Playback positions
 > • Library metadata
@@ -369,6 +424,10 @@ WolfTube is designed to visually integrate with YouTube.
 The interface follows the application's appearance and supports both light and dark environments.
 
 WolfTube avoids unnecessarily separate interface styles and instead aims to make tools feel like part of YouTube itself.
+
+WolfTube also includes additional compatibility handling for YouTube's native Tab Bar.
+
+The native navigation bar is preserved while WolfTube tools are added, and recovery protections help prevent situations where the original YouTube tabs disappear and only the WolfTube button remains visible.
 
 ---
 
@@ -451,6 +510,7 @@ The interface is designed to correctly handle:
 * Icon alignment.
 * Text spacing.
 * Different interface lengths across languages.
+* Playlist playback controls in RTL layouts.
 
 ---
 
@@ -471,8 +531,39 @@ These include:
 * Project validation.
 * Compatibility checks.
 * Diagnostic tools.
+* Static project auditing.
+* Playback compatibility isolation.
 * Improved issue detection.
 * Faster troubleshooting when YouTube changes internal behavior.
+
+WolfTube also includes runtime integrity checks designed to detect unexpected application environment modifications.
+
+These checks can include:
+
+> • Loaded dynamic library inspection
+> • Runtime-loaded image monitoring
+> • Traditional jailbreak environment indicators
+> • RootHide-related environment indicators
+> • Dynamic instrumentation indicators
+> • Debug and tracing indicators
+> • Runtime integrity checks where supported
+
+The runtime protection system uses multiple independent signals instead of relying only on a single jailbreak file or path.
+
+---
+
+# 🧱 Build Compatibility
+
+Recent WolfTube updates also include improvements for Theos and different iOS SDK environments.
+
+Build-related fixes include:
+
+* Improved compatibility with older iOS SDK headers.
+* Removed unsupported direct dependency on `mach/mach_vm.h`.
+* Added compatibility handling for `SECT_CSTRING`.
+* Fixed the arm64 `_vm_region` linker error.
+* Added runtime resolution for supported Mach memory APIs.
+* Improved project auditing before releases.
 
 ---
 
@@ -499,20 +590,6 @@ WolfTube is continuously adapted as YouTube and iOS evolve.
 3. Install or sign the application using a supported installation method.
 4. Open YouTube.
 5. WolfTube features will automatically appear throughout supported parts of the application.
-
----
-
-# ⚠️ Important Notes
-
-> WolfTube includes compatibility improvements for supported cloned application environments.
-
-Some WolfTube features depend on YouTube's internal implementation and may require updates when YouTube changes its interface or playback systems.
-
-Available download qualities depend on the formats provided by the selected video.
-
-SponsorBlock functionality depends on supported segment data being available for the selected video.
-
----
 
 # ❤️ Support WolfTube
 
