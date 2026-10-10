@@ -1,7 +1,7 @@
 <div align="center">
 
 <img
-src="https://github.com/user-attachments/assets/634dfa30-51da-4a3f-a93f-b973c10764f9"
+src="Resources/WolfTubeNewLogo.png"
 width="155"
 alt="WolfTube Logo"
 />
@@ -10,11 +10,15 @@ alt="WolfTube Logo"
 
 ### A Powerful YouTube Experience for iOS
 
-**Downloads · Playlists · Background Playback · PiP · SponsorBlock · Shorts · Channel Tools**
+**Downloads · Private Library · Playlists · Selective Backups · Background Playback · PiP · SponsorBlock · Shorts**
+
+**Latest source update: v1.36.21 — Dark Premium Signature & Landscape Controls**
 
 <br>
 
-> 📦 Download the latest WolfTube package from the **Assets** section.
+> 📦 Download the latest WolfTube package from the **Assets** section of [Releases](https://github.com/inc1x/WolfTube/releases).
+>
+> ℹ️ Availability and compatibility of individual features depend on the YouTube/iOS version. Some recent interface and ad-filtering changes still require on-device verification.
 
 </div>
 
@@ -26,7 +30,24 @@ WolfTube is an advanced enhancement for YouTube on iOS that adds powerful media,
 
 It is designed to feel integrated with YouTube rather than operating as a separate application.
 
-WolfTube allows users to download media, build a personal offline library, create playlists, customize playlist artwork, control playlist playback modes, continue playback in the background, control downloaded media from the Lock Screen, manage multiple files at once, access additional tools for videos and channels, and customize which features appear throughout YouTube.
+WolfTube allows users to download media, maintain a personal offline library with optional Private access, create playlists with custom artwork, control playback, export only selected content, manage multiple media items, and customize YouTube-integrated tools. Its current interface combines native Liquid Glass surfaces with a Dark Premium settings header and signature-style WolfTube wordmark.
+
+---
+
+# 🆕 What's New — v1.36.21
+
+WolfTube's recent updates focus on customization, privacy, and closer integration with YouTube.
+
+* **Dark Premium settings header:** graphite layers, subtle metallic lighting, the new white wolf insignia, and a signature-style **WolfTube** title (`SnellRoundhand-Bold` where available, with fallback).
+* **Landscape player lock:** the lock control targets the center of the left-side empty margin, away from YouTube's native controls. Portrait placement is unchanged. Actual positioning depends on the player layout.
+* **New white wolf logo:** a shared icon source for the WolfTube tab, player tool, and settings; no intentional substitution for the user's YouTube profile photo.
+* **Persistent floating Tab Bar styling:** reapplication of Liquid Glass after navigation between Home, Shorts, You, and other tabs, with native profile images kept in their original rendering mode.
+* **Download-sheet RTL improvements:** independent icon and text layout, better support for long Arabic labels, and subtle burgundy-tinted selection for Video/Audio and save destinations.
+* **Classic settings restored:** tap an option to open its choices directly. The experimental Live Preview screen and Experience Studio are not part of the current interface.
+* **Playlist creation artwork:** choose whether to be asked for artwork each time, open Photos automatically, or keep the default cover.
+* **Selective library export:** control exactly which settings and media are included in a backup; Private items are excluded unless explicitly selected.
+
+The source has undergone static audits; this does **not** guarantee successful compilation or runtime behavior for every version of iOS/YouTube.
 
 ---
 
@@ -41,6 +62,9 @@ WolfTube adds a complete media downloading system directly into YouTube.
 * Support for high-resolution downloads when available.
 * Use supported direct media links for downloads.
 * View download progress directly inside WolfTube.
+* Choose a preferred download preset, quality, and destination in the download sheet.
+* Save supported media to WolfTube's library or the Photos app.
+* Use the download queue and scheduling controls when supported.
 * Keep downloaded content organized inside the built-in library.
 
 ### Audio Downloads
@@ -56,6 +80,12 @@ WolfTube adds a complete media downloading system directly into YouTube.
 * Download video thumbnails.
 * Retrieve high-quality thumbnail images.
 * Save or share thumbnails using the native iOS share interface.
+
+### Download Sheet & Floating Progress Indicator
+
+The unified download sheet offers Video/Audio switching, expandable quality and preset choices, destination selection, and a fixed download action button. Its Arabic layout reserves separate space for icons and labels to avoid overlap. Active selections use a restrained translucent burgundy accent.
+
+The floating download progress indicator supports different styles and positions, a red progress accent, dragging to reposition, and an available cancel control. Its subtle motion respects iOS **Reduce Motion** where implemented. The settings use classic choice menus, not Live Preview.
 
 ### Direct Link Downloading
 
@@ -89,6 +119,21 @@ From the library, users can:
 * Search the library.
 * Organize content using playlists.
 * Resume media from the previous playback position.
+* Edit local metadata such as title, channel/artist name, category, notes, and artwork without changing the underlying media file.
+* Pin individual media items and organize them in optional library sections.
+* Move selected items to the Private Library, where supported.
+* Use dedicated **Recently Played** and other optional library sections.
+* Trim supported downloaded video clips and share/save the result while preserving the original file.
+
+---
+
+# 🔐 Private Library & Custom Library Sections
+
+WolfTube can keep supported downloaded items in a **Private** section. Entering Private is designed to require iOS authentication (Face ID, Touch ID, or the device passcode), rather than storing a separate WolfTube PIN.
+
+In **Library & Interface**, users can request authentication at each new entry or configure a 1-, 5-, 15-, or 30-minute grace period. Returning from the background or leaving the Private section resets access according to the implemented lock behavior. An ordinary library refresh should not open Private or trigger authentication.
+
+The **Customize Library** screen lets users show, hide, or reorder optional sections including Shorts, Recently Played, and Private. Videos, Songs, and Playlists remain core sections. The editing and selection sheets use lighter Liquid Glass-style surfaces with reduced gray overlays.
 
 ---
 
@@ -125,6 +170,7 @@ Playlist features include:
 * Share playlists with other WolfTube users.
 * Delete playlists.
 * Undo accidental playlist deletion.
+* Configure how artwork is chosen when a new playlist is created.
 * Set a custom playlist image from the iOS Photo Library.
 * Change playlist artwork at any time.
 * Remove custom playlist artwork and restore the default WolfTube icon.
@@ -143,7 +189,11 @@ Users can:
 > • Remove custom artwork
 > • Restore the default playlist icon
 
-Custom playlist artwork is stored locally and can also be preserved through WolfTube Backup & Restore.
+Custom playlist artwork is stored locally and can also be preserved through WolfTube Backup & Restore when the relevant playlist data is included.
+
+### Artwork Prompt When Creating a Playlist
+
+The **New playlist artwork** setting offers three modes: **Ask every time**, **Open Photos automatically**, or **Always use the default artwork**. If the user cancels photo selection, the playlist itself remains created with its default cover. This also applies when creating a playlist from an **Add to playlist** action.
 
 ### 🔁 Playlist Playback Modes
 
@@ -159,7 +209,9 @@ WolfTube includes multiple playlist playback modes:
 
 **Shuffle** plays playlist items in a randomized order.
 
-Playback mode changes are applied directly to the active playlist session.
+Playback mode changes are applied directly to the active playlist session. The updated playlist screen uses a softer translucent red glow for the current mode, rather than an opaque red selection block.
+
+The playlist header also includes **Play all** and **Add audio** actions. Its detail view intentionally omits the old **Search this playlist** field; search remains available in the wider library and the **Select media** picker.
 
 Playback controls also preserve their intended behavior in right-to-left languages such as Arabic.
 
@@ -302,13 +354,15 @@ SponsorBlock can be independently enabled or disabled from WolfTube settings.
 
 # 🚫 Advertisement Reduction
 
-WolfTube includes optional tools for reducing supported advertisements inside YouTube.
+WolfTube includes optional tools for reducing supported advertisements inside YouTube. Because internal ad renderers vary across YouTube/iOS releases, results are not guaranteed.
 
 Features can include:
 
 * Reducing supported advertisements.
 * Automatically skipping supported skippable advertisements.
 * Providing a cleaner viewing experience.
+
+**Version note:** the legacy renderer-filtering path used before v1.35.3 was reintroduced experimentally for iOS 26/27 in v1.36.19. On iOS 18–25, conservative behavior remains to reduce known collection-layout crash risks. Some ads, including Shorts ads, may still appear; compatibility and stability need real-device validation.
 
 ---
 
@@ -324,6 +378,7 @@ Available tools can include:
 * Quick media actions.
 * Copy utilities.
 * Shorts interface customization.
+* Optional floating/draggable WolfTube controls in supported Shorts layouts.
 
 Users can also choose whether WolfTube controls should appear inside Shorts.
 
@@ -399,21 +454,25 @@ This provides an easier way to move or share organized media collections without
 
 ---
 
-# 💾 Backup & Restore
+# 💾 Selective Backup & Restore
 
 WolfTube includes tools for backing up the local media library.
 
-A backup can include:
+Before exporting, users can select **exactly what their `.wtbackup` archive contains**, rather than automatically sharing the entire library.
 
-> • Downloaded videos
-> • Downloaded audio
-> • Playlists
-> • Custom playlist artwork
-> • Playlist organization
-> • Playback positions
-> • Library metadata
+Quick presets include:
 
-Backups can later be restored so users can continue using their WolfTube library after reinstalling or moving their setup.
+> • **Settings only** — no media files or personal library history
+> • **Videos only** — no unrelated audio or settings
+> • **Settings + videos**
+> • **Everything except Private**
+> • **Everything including Private**, with explicit confirmation
+
+A detailed selection mode also offers settings, videos, audio, playlists, selected library information/history, and a separate **Include Private** option. Private files and private playlist records are excluded by default, and only media files belonging to selected items are copied.
+
+Selective backups can be restored using the included import path, with handling for settings-only archives as well as older backup formats.
+
+**Privacy notice:** `.wtbackup` files are **not encrypted**. Choosing what to include helps limit exposure, but does not make an exported file confidential. Keep backups secure and inspect the selected content before sharing.
 
 ---
 
@@ -427,7 +486,19 @@ WolfTube avoids unnecessarily separate interface styles and instead aims to make
 
 WolfTube also includes additional compatibility handling for YouTube's native Tab Bar.
 
-The native navigation bar is preserved while WolfTube tools are added, and recovery protections help prevent situations where the original YouTube tabs disappear and only the WolfTube button remains visible.
+The native navigation bar is preserved while WolfTube tools are added, and recovery protections help prevent situations where the original YouTube tabs disappear and only the WolfTube button remains visible. Recent builds attempt to reapply a floating Liquid Glass tab style after YouTube reconstructs its tabs, while avoiding template tinting of the actual profile picture in the **You** tab.
+
+The current shared WolfTube branding uses the **white wolf-head logo** rather than the previous red icon.
+
+---
+
+# 🖤 Dark Premium, Signature & Liquid Glass
+
+The settings header has a **Dark Premium** visual treatment with a graphite palette, subtle metallic highlights, a glass-like wolf logo tile, and a signature-style WolfTube wordmark. It uses an iOS-provided signature font where supported, with a fallback for compatibility.
+
+WolfTube's supported sheets and library controls use rounded glass-style components. OLED black appearance remains available where implemented, and lighter blur/fallback surfaces are used on older systems.
+
+The landscape player can place the **Lock** control in the left-side free area at mid-height while positioning the WolfTube action control alongside supported player tools without overlapping YouTube's native buttons. Player geometry can differ by YouTube release.
 
 ---
 
@@ -472,11 +543,20 @@ Settings are organized into logical categories such as:
 > • Channel Button
 > • Profile Button
 
+### Library & Interface
+
+> • Private Library authentication timeout
+> • Customize library sections
+> • New playlist artwork behavior
+> • Optional mirroring of WolfTube controls when YouTube is in Arabic
+> • Liquid Glass / appearance controls
+
 ### Interface
 
 > • Language
 > • Appearance
 > • WolfTube interface options
+> • Floating download HUD style, position and animation (classic choice menus)
 
 Users can enable only the WolfTube features they want.
 
@@ -511,12 +591,14 @@ The interface is designed to correctly handle:
 * Text spacing.
 * Different interface lengths across languages.
 * Playlist playback controls in RTL layouts.
+* Arabic labels and icon spacing within the unified download sheet.
+* Optional layout mirroring based on the **YouTube app language**, independently from the WolfTube settings language.
 
 ---
 
 # 💬 Native-Style Notifications
 
-WolfTube uses cleaner application-style notifications and feedback for supported actions.
+WolfTube uses cleaner application-style notifications and feedback for supported actions, including a rounded **Liquid Glass-style Undo** banner for supported deletions.
 
 This provides a more consistent visual experience instead of relying on unrelated system-style messages.
 
@@ -536,19 +618,7 @@ These include:
 * Improved issue detection.
 * Faster troubleshooting when YouTube changes internal behavior.
 
-WolfTube also includes runtime integrity checks designed to detect unexpected application environment modifications.
-
-These checks can include:
-
-> • Loaded dynamic library inspection
-> • Runtime-loaded image monitoring
-> • Traditional jailbreak environment indicators
-> • RootHide-related environment indicators
-> • Dynamic instrumentation indicators
-> • Debug and tracing indicators
-> • Runtime integrity checks where supported
-
-The runtime protection system uses multiple independent signals instead of relying only on a single jailbreak file or path.
+The bundled diagnostic scripts and static audits are development aids. They do not replace testing with the actual installed YouTube build.
 
 ---
 
@@ -580,6 +650,14 @@ Feature availability can vary depending on:
 * Available media formats for each video.
 
 WolfTube is continuously adapted as YouTube and iOS evolve.
+
+---
+
+# 🔧 Verification & Known Limitations
+
+The project includes static audit and source-level regression checks for UI, backups, and selected feature paths. These tests do **not** confirm that the current source compiles with every Theos/iOS SDK or behaves correctly on every iPhone.
+
+In particular, confirm on-device behavior of the floating tab bar, the signature header, landscape lock placement, Private authentication, selective backups, and iOS 26/27 ad filtering before treating them as fully verified.
 
 ---
 
@@ -618,6 +696,8 @@ Users are responsible for complying with applicable platform terms, copyright ru
 
 ### Your YouTube. Your Media. Your Way.
 
-**Made with ❤️ by the @inc_inc**
+**Lead developer:** [@inc_inc](https://t.me/inc_inc) · **Assistant developer:** Abd Al-Rahman ([@cc7iq](https://t.me/cc7iq))
+
+**Updates:** [Telegram](https://t.me/inc_ipa) · **Donations:** [Official Binance instructions](https://t.me/inc_ipa/8502)
 
 </div>
