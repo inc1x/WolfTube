@@ -1,7 +1,7 @@
 <div align="center">
 
 <img
-src="Resources/WolfTubeNewLogo.png"
+src="https://github.com/user-attachments/assets/634dfa30-51da-4a3f-a93f-b973c10764f9"
 width="155"
 alt="WolfTube Logo"
 />
