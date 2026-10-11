@@ -12,13 +12,13 @@ alt="WolfTube Logo"
 
 **Downloads · Private Library · Playlists · Selective Backups · Background Playback · PiP · SponsorBlock · Shorts**
 
-**Latest source update: v1.36.21 — Dark Premium Signature & Landscape Controls**
+**Latest source update: v1.38.2 — Design Studio+ · Scoped Liquid Glass · iOS 27 Compatibility**
 
 <br>
 
-> 📦 Download the latest WolfTube package from the **Assets** section of [Releases](https://github.com/inc1x/WolfTube/releases).
+> 📦 Check the **Assets** section of [Releases](https://github.com/inc1x/WolfTube/releases) for published packages. The latest source version may be newer than the latest packaged release.
 >
-> ℹ️ Availability and compatibility of individual features depend on the YouTube/iOS version. Some recent interface and ad-filtering changes still require on-device verification.
+> ℹ️ Feature availability depends on the YouTube build, iOS version, and installation environment. Source-level checks are not a substitute for building and testing on a device.
 
 </div>
 
@@ -30,24 +30,40 @@ WolfTube is an advanced enhancement for YouTube on iOS that adds powerful media,
 
 It is designed to feel integrated with YouTube rather than operating as a separate application.
 
-WolfTube allows users to download media, maintain a personal offline library with optional Private access, create playlists with custom artwork, control playback, export only selected content, manage multiple media items, and customize YouTube-integrated tools. Its current interface combines native Liquid Glass surfaces with a Dark Premium settings header and signature-style WolfTube wordmark.
+WolfTube allows users to download media, maintain a personal offline library with optional Private access, create playlists with custom artwork, control playback, export selected content, manage multiple media items, and customize YouTube-integrated tools. Its interface preserves the white-wolf identity and Signature wordmark while offering **Classic** and **Studio** appearances for WolfTube-owned feature pages. Player and Shorts overlays continue to use their existing translucent **Liquid Glass** presentation.
 
 ---
 
-# 🆕 What's New — v1.36.21
+# 🆕 What's New — v1.38.2
 
-WolfTube's recent updates focus on customization, privacy, and closer integration with YouTube.
+**Design Studio+** expands the appearance controls introduced in the 1.37–1.38 series while keeping WolfTube's playback overlays visually consistent with YouTube.
 
-* **Dark Premium settings header:** graphite layers, subtle metallic lighting, the new white wolf insignia, and a signature-style **WolfTube** title (`SnellRoundhand-Bold` where available, with fallback).
-* **Landscape player lock:** the lock control targets the center of the left-side empty margin, away from YouTube's native controls. Portrait placement is unchanged. Actual positioning depends on the player layout.
-* **New white wolf logo:** a shared icon source for the WolfTube tab, player tool, and settings; no intentional substitution for the user's YouTube profile photo.
-* **Persistent floating Tab Bar styling:** reapplication of Liquid Glass after navigation between Home, Shorts, You, and other tabs, with native profile images kept in their original rendering mode.
-* **Download-sheet RTL improvements:** independent icon and text layout, better support for long Arabic labels, and subtle burgundy-tinted selection for Video/Audio and save destinations.
-* **Classic settings restored:** tap an option to open its choices directly. The experimental Live Preview screen and Experience Studio are not part of the current interface.
-* **Playlist creation artwork:** choose whether to be asked for artwork each time, open Photos automatically, or keep the default cover.
-* **Selective library export:** control exactly which settings and media are included in a backup; Private items are excluded unless explicitly selected.
+### 🎨 Design Studio+ & Live Preview
 
-The source has undergone static audits; this does **not** guarantee successful compilation or runtime behavior for every version of iOS/YouTube.
+* **Two selectable looks:** **Classic** retains the previous WolfTube appearance; **Studio** provides a restrained graphite interface with carefully placed accent color for WolfTube settings and feature screens.
+* **Live Preview:** preview the WolfTube Signature header, playlist styling, feature-row density, download button, and floating download indicator before committing changes.
+* **Progress indicator colors:** choose **Red**, **White**, or **Gold** for WolfTube's download-progress bar/ring.
+* **Progress indicator thickness:** choose **Thin**, **Balanced**, or **Bold**, with an interactive preview percentage slider.
+* **Row density:** switch between the default and a more compact layout for WolfTube-owned settings and feature lists.
+* **Existing indicator options:** choose the download indicator style, position, and animation from the same studio.
+* **Review before applying:** changes are staged. Leaving the studio with edits offers **Apply**, **Discard**, or **Continue editing**. Resetting the preview does not immediately overwrite saved settings.
+* **Refined settings UX:** Studio uses cleaner continuous rows and subtle dividers, rather than placing a colored card behind every item.
+
+### 🫧 Design Scope & Playback Compatibility
+
+* **Studio stays inside WolfTube features:** Quick Settings, feature pages, supported library and playlist views, and the Signature header can follow the selected appearance.
+* **Liquid Glass stays in the player:** the WolfTube action menu over a YouTube video, media download sheet, player/Shorts buttons, and relevant playback overlays keep their existing glass or translucent treatment, regardless of whether Classic or Studio is selected.
+* **Download-progress customization changes the indicator itself**, not the surrounding glass material or YouTube's native video timeline.
+* **Shorts tab-bar refinements:** fixes target the Shorts-specific floating tab appearance and optional WolfTube-added progress line. Some visual differences remain dependent on the installed YouTube build and need on-device verification.
+
+### 🧹 Release Cleanup & Stability
+
+* **Crash Logs removed from the user interface:** WolfTube's old crash-log viewer, export action, automatic session logging, and custom crash handlers have been disabled in the normal app source. Developer-only Frida scripts remain in the repository and are not run as an in-app service.
+* **Independent iOS 27 stability guards remain:** conservative Feed and collection-view handling is intended to prevent the earlier crashes and blank-feed regressions without aggressively modifying YouTube's layout or playback requests.
+* **Local audio playback improvements:** the audio player supports a visible progress timeline with elapsed/remaining time and seeking where supported.
+* **Source regression checks:** dedicated checks cover the new studio settings, design scoping, and selected iOS 27 compatibility paths.
+
+> **Verification status:** v1.38.2 is a **source update**. The supplied project checks passed for the covered paths, but compilation with a particular Theos/iOS SDK and real-device behavior—especially on iOS 27—must be verified separately. An installed release may behave differently from the current source tree.
 
 ---
 
@@ -85,7 +101,7 @@ WolfTube adds a complete media downloading system directly into YouTube.
 
 The unified download sheet offers Video/Audio switching, expandable quality and preset choices, destination selection, and a fixed download action button. Its Arabic layout reserves separate space for icons and labels to avoid overlap. Active selections use a restrained translucent burgundy accent.
 
-The floating download progress indicator supports different styles and positions, a red progress accent, dragging to reposition, and an available cancel control. Its subtle motion respects iOS **Reduce Motion** where implemented. The settings use classic choice menus, not Live Preview.
+The floating download progress indicator supports multiple styles and positions, dragging to reposition where enabled, and an available cancel control. **Design Studio+** can customize its progress color (**Red**, **White**, or **Gold**) and bar/ring thickness (**Thin**, **Balanced**, or **Bold**) while leaving the enclosing Liquid Glass surface unchanged. Animation preferences and iOS **Reduce Motion** are respected where implemented. Live Preview lets users inspect supported changes before applying them.
 
 ### Direct Link Downloading
 
@@ -362,7 +378,7 @@ Features can include:
 * Automatically skipping supported skippable advertisements.
 * Providing a cleaner viewing experience.
 
-**Version note:** the legacy renderer-filtering path used before v1.35.3 was reintroduced experimentally for iOS 26/27 in v1.36.19. On iOS 18–25, conservative behavior remains to reduce known collection-layout crash risks. Some ads, including Shorts ads, may still appear; compatibility and stability need real-device validation.
+**Compatibility note:** more aggressive Feed and collection-view ad filtering has caused crashes or missing videos on some iOS 26/27 setups. Current source prioritizes retaining the native Feed layout and playback path on those systems. Some advertisements—including Shorts ads—may remain visible. Ad reduction is best-effort, not guaranteed.
 
 ---
 
@@ -486,19 +502,46 @@ WolfTube avoids unnecessarily separate interface styles and instead aims to make
 
 WolfTube also includes additional compatibility handling for YouTube's native Tab Bar.
 
-The native navigation bar is preserved while WolfTube tools are added, and recovery protections help prevent situations where the original YouTube tabs disappear and only the WolfTube button remains visible. Recent builds attempt to reapply a floating Liquid Glass tab style after YouTube reconstructs its tabs, while avoiding template tinting of the actual profile picture in the **You** tab.
+The native navigation bar is preserved while WolfTube tools are added. Compatibility guards target situations where the original tabs disappear or the Shorts tab bar changes appearance. The floating Liquid Glass treatment is reapplied on supported transitions, while avoiding template tinting of the profile image in the **You** tab. Exact results still depend on YouTube and iOS versions.
 
 The current shared WolfTube branding uses the **white wolf-head logo** rather than the previous red icon.
 
 ---
 
-# 🖤 Dark Premium, Signature & Liquid Glass
+# 🖤 Classic, Studio, Signature & Liquid Glass
 
-The settings header has a **Dark Premium** visual treatment with a graphite palette, subtle metallic highlights, a glass-like wolf logo tile, and a signature-style WolfTube wordmark. It uses an iOS-provided signature font where supported, with a fallback for compatibility.
+WolfTube retains its **white wolf logo**, Dark Premium identity, and signature-style WolfTube wordmark. The Signature header uses a suitable iOS font where available, with a fallback.
 
-WolfTube's supported sheets and library controls use rounded glass-style components. OLED black appearance remains available where implemented, and lighter blur/fallback surfaces are used on older systems.
+Users can choose between **Classic** and **Studio** for WolfTube-owned screens:
+
+* **Classic** — the established WolfTube interface.
+* **Studio** — a cleaner graphite presentation with restrained accents, light separators, and more cohesive settings, playlist, and library styling.
+
+**The choice does not redesign YouTube's native interface.** Overlays opened from the video player or Shorts—including the WolfTube action menu, media download sheet, and supported floating controls—retain their glass-like appearance. Older systems can use fallback blur surfaces where necessary; OLED-black appearance remains available in supported areas.
 
 The landscape player can place the **Lock** control in the left-side free area at mid-height while positioning the WolfTube action control alongside supported player tools without overlapping YouTube's native buttons. Player geometry can differ by YouTube release.
+
+---
+
+# 🎛️ Design Studio+ — Personalization & Preview
+
+Open **WolfTube Settings → Design Studio** to preview and configure supported WolfTube-owned components.
+
+| Control | Choices / behavior |
+| --- | --- |
+| Appearance | Classic / Studio |
+| Download indicator | Glass, circle, mini, card, or hidden (where supported) |
+| Progress accent | Red / White / Gold |
+| Progress thickness | Thin / Balanced / Bold |
+| Preview progress | Drag the preview slider to simulate a percentage |
+| Indicator placement | Supported upper/lower placement options |
+| Animation | Supported motion modes, with reduced-motion behavior where implemented |
+| Feature-row density | Default / Compact |
+| Extra Shorts progress line | Optional hiding of WolfTube's added line; does not remove the native YouTube video progress control |
+
+The live preview also shows examples of Signature branding, playlists, and feature controls. The studio stages changes until the user chooses **Apply**. If the user tries to leave with changes, **Apply / Discard / Continue editing** lets them decide what to keep. **Reset preview** only changes the pending selection, not the saved configuration.
+
+The feature-row density setting applies to WolfTube-owned pages; it does **not** change YouTube's player, native menus, or Feed layout.
 
 ---
 
@@ -512,7 +555,7 @@ Interface elements automatically adapt to the current appearance where supported
 
 # ⚙️ Organized Settings
 
-WolfTube provides a dedicated settings interface for controlling individual features.
+WolfTube provides a dedicated settings interface for controlling individual features. Inside Design Studio, visual choices can be previewed without changing saved preferences until the user confirms them.
 
 Settings are organized into logical categories such as:
 
@@ -556,7 +599,8 @@ Settings are organized into logical categories such as:
 > • Language
 > • Appearance
 > • WolfTube interface options
-> • Floating download HUD style, position and animation (classic choice menus)
+> • Design Studio+ (Classic / Studio, Live Preview, download progress color/thickness, feature-row density)
+> • Floating download HUD style, position and animation
 
 Users can enable only the WolfTube features they want.
 
@@ -604,21 +648,13 @@ This provides a more consistent visual experience instead of relying on unrelate
 
 ---
 
-# 🧰 Reliability & Diagnostics
+# 🧰 Reliability & Developer Tooling
 
-WolfTube includes internal tools designed to make development and troubleshooting more reliable.
+WolfTube's source includes project validation, compatibility checks, static audits, and optional **developer-only** Frida diagnostic scripts. These are intended for investigating YouTube changes and do not replace real-device testing.
 
-These include:
+The former **Crash Logs** screen and WolfTube-specific automatic crash/session logger are not part of the current in-app experience. The source keeps compatibility stubs where needed for linking, but these do not write new crash-log files. Updating does **not** automatically delete log files produced by older builds on a device.
 
-* Project validation.
-* Compatibility checks.
-* Diagnostic tools.
-* Static project auditing.
-* Playback compatibility isolation.
-* Improved issue detection.
-* Faster troubleshooting when YouTube changes internal behavior.
-
-The bundled diagnostic scripts and static audits are development aids. They do not replace testing with the actual installed YouTube build.
+Stability safeguards for iOS 27 Feed/collection behavior are separate from the removed logging features.
 
 ---
 
@@ -657,7 +693,7 @@ WolfTube is continuously adapted as YouTube and iOS evolve.
 
 The project includes static audit and source-level regression checks for UI, backups, and selected feature paths. These tests do **not** confirm that the current source compiles with every Theos/iOS SDK or behaves correctly on every iPhone.
 
-In particular, confirm on-device behavior of the floating tab bar, the signature header, landscape lock placement, Private authentication, selective backups, and iOS 26/27 ad filtering before treating them as fully verified.
+In particular, confirm on-device behavior of Studio/Classic switching, preview confirmation, progress indicator color/thickness, feature-row density, player and Shorts Liquid Glass overlays, the floating tab bar, audio seeking, Private authentication, selective backups, and iOS 26/27 Feed/ad handling before treating them as fully verified. The included source checks cover selected regression risks only.
 
 ---
 
