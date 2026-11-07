@@ -1,0 +1,7 @@
+{
+  "app": "WolfTube",
+  "version": "1.40.11",
+  "build": 14011,
+  "channel": "beta",
+  "release_notes": "Release notes go here."
+}
