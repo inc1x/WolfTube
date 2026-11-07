@@ -23,16 +23,16 @@ jobs:
     steps:
       - name: Validate required configuration
         env:
-          SYNC_SECRET: ${{ secrets.WOLFTUBE_SYNC_SECRET }}
+          SYNC_SECRET: ${{ secrets.WOLFTUBE_RAILWAY_SYNC_SECRET }}
         run: |
           if [ -z "$SYNC_SECRET" ]; then
-            echo "::error::Repository secret WOLFTUBE_SYNC_SECRET is missing."
+            echo "::error::Repository secret WOLFTUBE_RAILWAY_SYNC_SECRET is missing."
             exit 1
           fi
 
       - name: Notify WolfTube Control API
         env:
-          SYNC_SECRET: ${{ secrets.WOLFTUBE_SYNC_SECRET }}
+          SYNC_SECRET: ${{ secrets.WOLFTUBE_RAILWAY_SYNC_SECRET }}
           RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
           REPOSITORY: ${{ github.repository }}
         run: |
