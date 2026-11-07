@@ -1,0 +1,46 @@
+name: WolfTube Release Sync
+
+on:
+  release:
+    types: [published, prereleased]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Optional release tag to validate and sync
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wolftube-release-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate required configuration
+        env:
+          SYNC_SECRET: ${{ secrets.WOLFTUBE_SYNC_SECRET }}
+        run: |
+          if [ -z "$SYNC_SECRET" ]; then
+            echo "::error::Repository secret WOLFTUBE_SYNC_SECRET is missing."
+            exit 1
+          fi
+
+      - name: Notify WolfTube Control API
+        env:
+          SYNC_SECRET: ${{ secrets.WOLFTUBE_SYNC_SECRET }}
+          RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          payload="$(jq -n --arg repository "$REPOSITORY" --arg tag "$RELEASE_TAG" '{repository:$repository,tag:$tag}')"
+          curl --fail-with-body --silent --show-error \
+            --retry 3 --retry-all-errors --retry-delay 3 \
+            -X POST "https://wolftube-control-api-production.up.railway.app/api/v1/github/release-sync" \
+            -H "Authorization: Bearer $SYNC_SECRET" \
+            -H "Content-Type: application/json" \
+            --data "$payload"
